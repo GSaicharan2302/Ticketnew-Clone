@@ -1,0 +1,137 @@
+.footer{
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #fff;    
+}
+.ticketnewinfoContainer{
+    font-family:"Catamaran", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 178px;
+    line-height: 1.4;
+    margin-left: 35px;
+}
+.playStoreImg{
+   width: 8.9%; 
+   height: 47px;
+   margin-top: 5px;
+   margin-left: 45px;
+}
+.customerCarePara{
+    font-family:"Catamaran", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.faqPara{
+    font-family:"Catamaran", sans-serif;
+    font-size: 14px;
+    margin-left: 27px;
+    margin-top: 5px;
+}
+.card{
+    /* background-color: red; */
+    width: 7%;
+    border: none;
+}
+.callBtn{
+    background-color: #aa9999;
+    color: black;
+    margin-left: 12px;
+}
+.firstRowContainer{
+    display: flex;
+}
+#customerCareBtn{
+    margin-left: 58%;
+}
+.firstListContainer{
+    /* background-color: red; */
+    width: 20%;
+    list-style-type: none;
+    line-height: 1.7;
+}
+.secondListContainer{
+    /* background-color: blue; */
+    width: 20%;
+    list-style-type: none;
+    line-height: 1.7;
+    margin-left: 83px;
+}
+.thirdListContainer{
+    /* background-color: yellow; */
+    width: 20%;
+    list-style-type: none;
+    line-height: 1.7;
+    margin-left: 83px;
+}
+.fourthListContainer{
+    /* background-color: green; */
+    width: 20%;
+    list-style-type: none;
+    line-height: 1.7;
+    margin-left: 83px;
+}
+.firstLinkPara{
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.secondLinkPara{
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #bfc7c1;
+}
+.secondLinkPara:hover{
+    cursor: pointer;
+    color: #b095f0;
+}
+.thirdLinkPara{
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #bfc7c1;
+}
+.thirdLinkPara:hover{
+    cursor: pointer;
+    color: #b095f0;
+}
+.fourthLinkPara{
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #bfc7c1;
+}
+.fourthLinkPara:hover{
+    cursor: pointer;
+    color: #b095f0;
+}
+.fifthLinkPara{
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #bfc7c1;
+}
+.fifthLinkPara:hover{
+    cursor: pointer;
+    color: #b095f0;
+}
+.listlinkContainer{
+    display: flex;
+}
+.twitterImg{
+    width: 1.8%;
+    margin-right: 27px;
+    margin-left: 48%;
+}
+.facebookImg{
+    width: 1.8%;
+}
+.copyrightPara{
+    font-family:"Catamaran", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #a19f9a;
+    margin-top: 13px;
+    margin-left: 36%;
+}

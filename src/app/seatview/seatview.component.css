@@ -1,0 +1,256 @@
+.navBarContainer{
+    width: 100%;
+    padding: 14px;
+    background-color: #ede9dd;
+    display: flex;
+}
+.paytmticketnewLogo{
+    width: 8%;
+    height: 60px;
+    margin-left: 20px;
+    /* background-color: yellow; */
+    margin-top: 3px;
+}
+.backIconContainer{
+    margin-left: 9.8%;
+    font-size: 27px;
+    margin-top: 17px;
+}
+.backIconContainer:hover{
+    cursor: pointer;
+}
+.movieShowContainer{
+    width: 29%;
+    margin-left: 18%;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 6px;
+}
+.movieShowHeading{
+    font-size: 18px;
+    font-family: "Catamaran",sans-serif;
+    font-weight: 600;
+    /* background-color: blueviolet; */
+}
+.movieShowPara{
+    font-size: 16px;
+    font-family: "Catamaran",sans-serif;
+    font-weight: 500; 
+    margin-top: -13px;
+    /* background-color: yellow; */
+}
+.dateContainer{
+    width: 7%;
+    /* background-color: red; */
+    margin-top: 20px;
+}
+.dayNameHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+.datePara{
+    font-family: "Catamaran",sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+}
+.showtimeContainer{
+    display: flex;
+    margin-top: 38px;
+    margin-left: 11%;
+    /* background-color: yellow; */
+}
+.firstShowContainer{
+    width: 16%;
+    border-radius: 5px;
+    background-color: #09d3ed;
+    text-align: center;
+    padding-left:4px ;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    margin-right: 12px;
+    /* margin-top: 5px; */
+    /* height: 78px; */
+}
+.firstShowTimingHeading{
+    font-family: "Geologica",sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    /* background-color: yellow; */
+    width: 80%;
+    margin-left: 16px;
+    margin-top: 14px;
+    color: #fff;
+}
+.firstShowFormatPara{
+    font-family: "Geologica",sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    width: 80%;
+    margin-left: 16px;
+    margin-top: -10px;
+    /* background-color: red; */
+    color: #fff;
+}
+.showContainer{
+    /* background-color: green; */
+    width: 80%;
+    padding-left: 8px;
+    display: flex;
+}
+.firstShowContainer:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.individualSlotIdentifierContainer{
+    display: flex;
+    /* background-color: yellow; */
+    height: 38px;
+    margin-left: 17px;
+}
+.slotIdentifierContainer{
+    display: flex;
+    margin-left: -22%;
+    margin-top: 34px;
+    /* background-color: red; */
+}
+.individualSlotPara{
+    font-family: "Catamaran",sans-serif;
+    font-size: 14.7px;
+    font-weight: 600;
+    margin-left: 7px;
+    margin-top: 2px;
+    /* background-color: blueviolet; */
+}
+.availableSlotIconContainer{
+    background-color: #b8b6b0;
+    color:#b8b6b0;
+    border-radius: 4px;
+    border: 0.2px #09d3ed;
+}
+.bookedSlotIconContainer{
+    background-color: #909396;
+    color: #909396;
+    border-radius: 4px;
+}
+.selectedSlotIconContainer{
+    background-color: #09d3ed;
+    color: #09d3ed;
+    border-radius: 4px;
+}
+.seatlayoutContainer{
+    width: 100%;
+    height: 400px;
+    /* background-color: #fff; */
+    padding-top: 48px;
+}
+.layoutHeading{
+    width: 100%;
+    font-family: "Catamaran",sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.amountContainer{
+    font-family: "Geologica",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.layoutContainer{
+    /* background-color: orange; */
+    width: 100%;
+    padding: 15px;
+}
+.firstRowContainer{
+    display: flex;
+}
+.secondRowContainer{
+    margin-top: 20px;
+    display: flex;
+}
+.firstColumnContainer{
+    margin-left: 15px;
+    display: flex;
+}
+.secondColumnContainer{
+    margin-left: 75px;
+    display: flex;
+}
+.theatreScreenImg{
+    margin-left: 38%;
+    margin-top: -110px;
+}
+.overallTheatreViewContainer{
+    width: 100%;
+    height: 990px;
+    background-color:#fff ;
+    padding: 2px;
+}
+.seatCard{
+    margin-left: 8px;
+    width: 32px;
+    height: 25px;
+    padding-top: 2.5px;
+    border-radius: 4px;
+    background-color: #b8b6b0;
+    font-family: 'Geologica',sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.seatCard:hover{
+    background-color: #4fc3e3;
+    cursor: pointer;
+}
+.firstRowHeading{
+    /* background-color: blueviolet; */
+    margin-top: 3px;
+    font-size: 18px;
+    font-family: 'Geologica',sans-serif;
+    font-weight: 600;
+    margin-left: 45px;
+}
+.thirdColumnContainer{
+    margin-left: 75px;
+    display: flex;   
+}
+.bookTicketBtn{
+    width: 13%;
+    border-radius: 7.8px;
+    background-color: #f0776e;
+    color: #fff;
+    font-family: 'Geologica',sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 43.9px;
+    margin-top: 3px;
+}
+.bookTicketContainer{
+    display: flex;
+
+}
+.priceDetailsContainer{
+    width: 23%;
+    /* background-color: yellow; */
+    margin-left: 28%;
+}
+.priceHeading{
+    font-family: 'Geologica',sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 12px;
+    /* background-color: red; */
+    text-align: center;
+}
+.pricePara{
+    font-family: 'Geologica',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 2px;
+    /* background-color: blue; */
+    text-align: center;
+}
+.bookTicketBtn:hover{
+    transform: scale(0.85);
+}

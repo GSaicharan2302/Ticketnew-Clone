@@ -1,0 +1,11 @@
+<img src="https://assetscdn1.paytm.com/movies_new/_next/static/media/tn-paytm-logo-seat-layout.b4b6edde.png" class="paytmTicketNewLogoImg">
+<div class="mb-3 overallEmailContainer" *ngIf="this.isemailIDContainerVisible">
+    <label for="exampleFormControlInput1" class="form-label loginHeading">Login with Email ID:</label>
+    <input type="email" class="form-control mobileNumberContainer" id="exampleFormControlInput1" placeholder="Enter Email ID:" [(ngModel)]="this.emailID">
+</div>
+<button type="button" class="btn btn-outline-info otpBtn" (click)="this.getOTP()" *ngIf="this.isSendOTPBtnVisible">Get OTP</button>
+<div class="mb-3 overallEmailContainer" *ngIf="this.isOTPContainerVisible">
+  <label for="exampleFormControlInput1" class="form-label loginHeading">Enter OTP</label>
+  <input type="text" class="form-control mobileNumberContainer" id="exampleFormControlInput1" placeholder="Enter OTP" [(ngModel)]="this.otp">
+</div>
+<button type="button" class="btn btn-outline-info otpBtn" (click)="this.login()" *ngIf="this.isLoginBtnVisible" [mat-dialog-close]="isLoginSuccess">Login</button>

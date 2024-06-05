@@ -1,0 +1,52 @@
+.cityNameHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 16.4px;
+    font-weight: 600;
+    color: #989e99;
+    /* background-color: white; */
+    /* padding-left: 14px; */
+    margin-left: -4px;
+}
+.cityCard{
+    max-width:140px ;
+    min-width: 140px;
+    min-height: 110px;
+    max-height: 110px;
+    box-shadow: none;
+    margin-left: 23px;
+    /* background-color: #edeef0; */
+}
+.cityCard:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.cityCardHeader{
+    min-height: 70px;
+    max-height: 70px;
+    /* background-color: red; */
+    padding: 0px !important;
+
+}
+.cityCardContent{
+    /* background-color: blueviolet; */
+    text-align: center;
+}
+.cityCardImg{
+    width: 88%;
+    height: 60px;
+    margin-left: 7.8px;
+    margin-top: 4px;
+    /* background-color: #edeef0; */
+}
+.cityCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.bodyCoverContainer{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: #fff;
+}

@@ -1,0 +1,23 @@
+<img src="https://assetscdn1.paytm.com/movies_new/_next/static/media/tn-paytm-logo-seat-layout.b4b6edde.png" class="paytmTicketNewLogoImg">
+<div class="signUpContainer" [formGroup]="this.customerForm" >
+    <input type="email" class="form-control customerEmailContainer" id="exampleFormControlInput1" placeholder="Enter Email ID :" formControlName="emailID" matInput>
+    <mat-error *ngIf="emailID?.errors?.['required']" class="errorMessageContainer">
+        Email ID is required
+    </mat-error>
+    <mat-error *ngIf="emailID?.errors?.['pattern']" class="errorMessageContainer">
+        Enter proper Email ID
+    </mat-error>
+    <input class="form-control customerNameContainer" type="text" placeholder="Enter Name :" aria-label="default input example" formControlName="customername" matInput>
+    <mat-error *ngIf="customername?.errors?.['required']" class="errorMessageContainer">
+        Customer Name is required
+    </mat-error>
+    <input class="form-control phoneNumberContainer" type="text" placeholder="Enter Contact Number :" aria-label="default input example" formControlName="contactno" matInput>
+    <mat-error *ngIf="contactno?.errors?.['required']" class="errorMessageContainer">
+            Contact Number is required
+    </mat-error>
+    <div class="btnContainer">
+        <button type="submit" class="btn btn-outline-warning submitBtn" (click)="this.customerFormOnSubmit($event)">Submit</button>
+        <button type="reset" class="btn btn-outline-danger resetBtn" (click)="this.customerForm.reset()">Reset</button>
+    </div>
+    
+</div>

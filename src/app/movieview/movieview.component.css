@@ -1,0 +1,491 @@
+.logoImg{
+    width: 5%;
+    height: 70%;
+    margin-left: 17px;
+}
+.toolBarContainer{
+    background-color: aliceblue;
+    /* box-shadow: 1px 1px 1px 1px #fff; */
+}
+.btnContainer{
+    margin-left: 23px;
+    width: 28.8%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.accountBtn{
+    border-radius: 17.8px;
+    margin-left: 600px;
+    /* margin-left: 174%; */
+}
+.accountBtn:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+.navBtn:hover{
+    background-color: aquamarine;
+    border-radius: 8.6px;
+}
+.playstoreImg{
+    width: 2.1%;
+    margin-left: 37px;
+    margin-top: -1.8px;
+}
+.applelogoImg{
+    width: 1.9%;
+    margin-left: 27px;
+    margin-top: -8px;
+}
+.movieDetailsContainer{
+    width: 24%;
+    /* background-color: red; */
+    border-radius: 8.9px;
+    margin-left: 28px;
+    margin-top: 58px;
+    padding-left: 14px;
+    padding-top: 14px;
+}
+.moviefilmNameContainer{
+    font-size: 24px;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+    
+}
+.moviefilmImg{
+    width: 38%;
+    height: 160px;
+    border-radius: 8.9px;
+    /* position: relative;
+    top: -155px;
+    left: 778px; */
+    position: absolute;
+    top: 105px;
+    left: 878px;
+    opacity: 0.6;
+}
+.moviefilmRatingContainer{
+    font-family:"Catamaran", sans-serif ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #9ea8a1;
+}
+.moviefilmGenreContainer{
+    font-family:"Catamaran", sans-serif ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #9ea8a1;
+}
+.moviefilmLanguageContainer{
+    font-family:"Catamaran", sans-serif ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #9ea8a1;
+}
+
+.playIconContainer{
+    font-size: 26px;
+    position: absolute;
+    top: 170px;
+    left: 1141px;
+}
+.playIconContainer:hover{
+    cursor: pointer;
+}
+.moviefilmFilterContainer{
+    margin-top: 22px;
+    margin-left: 28px;
+    width: 21%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ratingLocationContainer{
+        display: flex;
+        margin-top: 22px;
+        margin-left: 45%;
+}
+.favoriteRatingContainer{
+    display: flex;
+    /* background-color: red; */
+    padding-top: 5.4px;
+    height: 35px;
+}
+.favoriteRatingSpan{
+    margin-left: 8px;
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.likeBtn{
+    border-radius: 17.8px;
+    margin-left: 22px;
+    background-color: #d7dbe0;
+    color: #5a5c5f;
+}
+.likeBtn:hover{
+    background-color: #77a8f7;
+    color: aqua;
+}
+.unlikeBtn:hover{
+    background-color: #f04380;
+    color: #fff;
+}
+.unlikeBtn{
+    border-radius: 17.8px;
+    margin-left: 22px;
+    background-color: #d7dbe0;
+    color: #5a5c5f;
+}
+.filterRatingLocationContainer{
+    display: flex;
+    /* background-color: yellow; */
+}
+.currentlocationBtn{
+    border-radius: 7.8px;
+    margin-left: 22px;
+    background-color: aqua;
+    font-family: "Catamaran", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+.moviefilmImg:hover{
+    cursor: pointer;
+}
+.dateContainer{
+    width: 4%;
+    border-radius: 8.9px;
+    background-color: #fff;
+    margin-left: 13px;
+}
+.dateContainer:hover{
+    background-color: #77a8f7;
+    color: #fff;
+    cursor: pointer;
+}
+.screenTheatreListItem{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    width: 40%;
+    margin-left: 17px;
+    /* background-color: #77a8f7; */
+    margin-top: 23px;
+    border-radius: 4px;
+    padding: 3px;
+    line-height: 1.5;
+}
+
+.screenTheatreListItem:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.screenTheatreListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 11px;
+    padding-bottom: 14px;
+    list-style-type: none;
+    /* background-color: red; */
+}
+.overallscreenTheatreListContainer{
+    
+    width: 60%;
+    border-radius: 5px;
+    padding: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 76px;
+    left: 58px;
+    z-index: 156;
+}
+
+.screenTheatreHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5a5c5f;
+    margin-left: 54px;
+    margin-top: 20px;
+}
+
+.dayPara{
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.datePara{
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+.monthContainer{
+    width: 2%;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #888a8c;
+    display: flex;
+    align-items: center;
+}
+.monthNameSpan{
+    /* background-color: blue; */
+    color: #fff;
+    margin-left: 2px;
+    rotate: 270deg;
+}
+
+.datesgroupContainer{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 45px;
+}
+#nextMonthContainer{
+    margin-left: 14px;
+}
+.languageFilterContainer{
+    width: 16%;
+    height: 38px;
+    background-color: #c9daf5;
+    padding: 4.8px;
+    padding-left: 6.8px;
+    display: flex;
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 4.3px;
+    font-size: 18px;
+    font-family:"Catamaran", sans-serif ;
+    font-weight: 600;
+}
+.languageFilterContainer:hover{
+    cursor: pointer;
+}
+.dropdowniconContainer{
+    /* background-color: red; */
+    margin-top: -3px;
+}
+.filterbyContainer{
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    /* background-color: yellow; */
+}
+.filterformatpriceContainer{
+    margin-left: 103px;
+    display: flex;
+    /* background-color: red; */
+    width: 50%;
+
+}
+.formatFilterContainer{
+    width: 16.2%;
+    height: 38px;
+    background-color: #c9daf5;
+    padding: 4.8px;
+    padding-left: 6.8px;
+    display: flex;
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 4.3px;
+    font-size: 18px;
+    font-family:"Catamaran", sans-serif ;
+    font-weight: 600;   
+}
+.showtimeFilterContainer{
+    width: 17.4%;
+    height: 38px;
+    background-color: #c9daf5;
+    padding: 4.8px;
+    padding-left: 6.8px;
+    display: flex;
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 4.3px;
+    font-size: 18px;
+    font-family:"Catamaran", sans-serif ;
+    font-weight: 600;   
+}
+.showtimeFilterContainer:hover{
+    cursor: pointer;
+}
+.formatFilterContainer:hover{
+    cursor: pointer;
+}
+.theatreNameHeading{
+    font-family:"Catamaran", sans-serif ;
+    font-size: 18px;
+    font-weight: 600;
+}
+.theatreCard{
+    border: none;
+    box-shadow: none;
+    width: 30%;
+}
+.getDirectionsBtn{
+    border-radius: 10.6px;
+    background-color: beige;
+}
+.infoBtn{
+    margin-left: 24px;
+    border-radius: 10.6px;
+    background-color: beige;
+}
+.individualTheatreContainer{
+    background-color: #fff;
+    display: flex;
+    margin-top: 35px;
+    width: 84%;
+    margin-left: 34px;
+    border-radius: 4.8px;
+    height: 132px;
+}
+.overallTheatreContainer{
+    padding-bottom: 25px;
+}
+.showScreenContainer{
+    display: flex;
+    width: 44%;
+    /* background-color: yellow; */
+    height: 75px;
+    margin-top: 27px;
+    margin-left: 30px;
+}
+.showScreenBtn{
+    width: 20%;
+    border-radius:4.7px;
+    background-color: #dff0e6;
+    margin-left: 38px;
+}
+.showTimeHeading{
+    text-align: center;
+    font-size: 21px;
+    font-family:"Catamaran", sans-serif;
+    font-weight: 600;
+    color: #1ee373;
+}
+.screenPara{
+    text-align: center;
+    font-size: 17px;
+    font-family:"Catamaran", sans-serif;
+    font-weight: 600;
+    color: #87918c;
+}
+.showScreenBtn{
+   padding-top: 4.8px; 
+}
+.showScreenBtn:hover{
+    background-color: #d42071;
+    cursor: pointer;
+}
+.reviewsMoreContainer{
+    /* background-color: red; */
+    padding-top: 45px;
+    padding-left: 34px;
+    padding-bottom: 18px;
+}
+.synopsisCard{
+    width: 76%;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 4.8px;
+    margin-bottom: 20px;
+}
+.synopsisCardHeading{
+    font-family:"Catamaran", sans-serif;
+    font-size: 23.7px;
+    font-weight: 600;
+}
+.synopsisCardPara{
+    font-size:"Catamaran", sans-serif;
+    font-size: 17.8px;
+    font-weight: 500;
+    color: #a7abb0;
+}
+.castCard{
+    width: 76%;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 4.8px;
+}
+.castCardContent{
+    display: flex;
+}
+.actorCard{
+    width: 15%;
+    border: none;
+    box-shadow: none;
+    /* margin-left: 14px; */
+}
+.actorImg{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin-left: 26px;
+}
+
+.actorNamePara{
+    text-align: center;
+    font-family:"Catamaran", sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+}
+.actorCardContent{
+    margin-top: 12px;
+}
+.movieListHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.overallmovieListContainer{
+    width: 70%;
+    border-radius: 5px;
+    position: absolute;
+    top: 76px;
+    left: 38px;
+    z-index: 157;
+    background-color: #fff;
+    padding: 20px;
+}
+.movieListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.movieListItem{
+    width: 43%;
+    margin-bottom: 17px;
+}
+.movieListItem:hover{
+    cursor: pointer;
+}
+.movieListItemCard{
+    width: 100%; 
+    box-shadow: none;
+}
+.movieListItemCardHeaderMovieDetails{
+    margin-left: 25px;
+}
+.movieListCardHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18.1px;
+    font-weight: 600;
+}
+.movieListCardPara{
+    font-family: "Catamaran",sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+.movieListItemCardImg{
+    width: 25%;
+    height: 56px;
+    border-radius: 5px;
+}

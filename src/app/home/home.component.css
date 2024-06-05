@@ -1,0 +1,227 @@
+.logoImg{
+    width: 5%;
+    height: 70%;
+    margin-left: 17px;
+}
+.toolBarContainer{
+    background-color: aliceblue;
+    /* box-shadow: 1px 1px 1px 1px #fff; */
+}
+.btnContainer{
+    margin-left: 23px;
+    width: 28.8%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.accountBtn{
+    border-radius: 17.8px;
+    margin-left: 600px;
+    /* margin-left: 174%; */
+}
+.accountBtn:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+.navBtn:hover{
+    background-color: aquamarine;
+    /* color: b; */
+    border-radius: 8.6px;
+}
+.playstoreImg{
+    width: 2.1%;
+    margin-left: 37px;
+    margin-top: -1.8px;
+}
+.applelogoImg{
+    width: 1.9%;
+    margin-left: 27px;
+    margin-top: -8px;
+}
+.movieContainer{
+    /* background-color: yellow; */
+    padding: 16px;
+    /* background-color: rgb(83, 220, 220); */
+    height: 340px;
+}
+
+.carouselPrevBtn{
+    margin-top: 136px;
+    margin-left: 55px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color:black;
+    /* color: black; */
+}
+.carouselNextBtn{
+    margin-top: 126px;
+    margin-right: 60px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color:black;
+}
+.movieCarouselImg{
+    background-color: red;
+    border-radius: 8px;
+    width: 80%;
+    height: 55%;
+    margin-left: 10%;
+    margin-top: 14px;
+}
+.filterContainer{
+    background-color:#fafbfc;
+    height: 55px;
+    padding: 1px;
+    /* box-shadow: 0.14px 0.14px 1.5px 16.5px #faf5f5; */
+    display: flex;
+}
+.movieFilterContainer{
+    /* background-color: red; */
+    width: 21%;
+    margin-top: 8.4px;
+    margin-left: 33px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 120%;
+    margin-left: 115%;
+    margin-top: 6.6px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    margin-left: 17.6%;
+    margin-top: 14px;
+}
+.locationBtn{
+    margin-left: 47%;
+    margin-top: 6.8px;
+    /* font-family: 'Geologica','sans-serif'; */
+    font-size: 17px;
+    font-weight: 600;
+}
+.locationBtn:hover{
+    background-color: rgb(232, 232, 119);
+    border-radius: 7.8px;
+    color: rgb(98, 84, 84);
+}
+.movieSearchControl{
+    border: none;
+}
+.secondFilterContainer{
+    border-radius: 8.9px;
+    margin-top: 19px;
+    margin-left: 38px;
+}
+.movieListContainer{
+    display: grid;
+    grid-template-columns: 23% 70%;
+}
+.movieFilterBtn{
+    font-size: 24px;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+}
+.radioBtnContainer{
+    /* background-color: red; */
+    width: 100%;
+}
+
+.logoutBtn{
+    font-family: "Catamaran",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.checkboxContainer{
+    margin-top: -20px;
+}
+.movieCityHeading{
+    font-size: 24px;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+    margin-top: 17px;
+    margin-left: 28px;
+}
+.movieRatingContainer{
+    margin-left: 24px;
+    border-radius: 8.9px;
+    margin-top: 19px;
+    background-color: #fff;
+}
+.movieCardContainer{
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    padding-right:25px;
+   display: flex;
+   /* justify-content: space-between; */
+   flex-wrap: wrap;
+}
+.movieCard{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 440px;
+    max-height: 440px;
+    border-radius: 10.8px;
+    margin-left: 14px;
+    margin-bottom: 15px;
+    /* background-color: red; */
+}
+.movieCard:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.movieCardHeader{
+    min-height: 290px;
+    max-height: 290px;
+    min-width: 420px;
+    max-width: 420px;
+}
+.movieCardImg{
+    width: 100%;
+    border-radius: 8.9px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    /* height: 30%; */
+}
+.movieCardContentHeading{
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 17px;
+}
+.movieCardContentPara{
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 3px;
+    color: #af9d9d;
+}
+.movieCardContent{
+    border: none;
+    border-bottom: 0.2px solid rgb(92, 88, 88);
+    padding-bottom: 4px;
+}
+.movieCardActions{
+    padding: 4px;
+    /* margin-bottom: 14px; */
+}
+.bookTicketBtn{
+    text-decoration: none;
+    color: #326da8;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 31%;
+}

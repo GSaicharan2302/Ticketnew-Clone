@@ -1,0 +1,215 @@
+<div class="navBarContainer">
+    <mat-icon class="backIconContainer" (click)="gotoPreviousPage($event)">arrow_back_ios</mat-icon>
+    <img src="https://assetscdn1.paytm.com/movies_new/_next/static/media/tn-paytm-logo-seat-layout.b4b6edde.png" class="paytmticketnewLogo">
+    <div class="movieShowContainer">
+        <h4 class="movieShowHeading">{{this.movie.movieName}} . {{this.getCurrentLanguage()}}</h4>
+        <p class="movieShowPara">{{this.getDay()}} {{this.getMonthName()}} , {{this.currentShow}} at {{this.theatre.theatreName}}, {{this.getAreaOfTheatre()}}</p>
+    </div>
+</div>
+<div class="overallTheatreViewContainer">
+<div class="showtimeContainer">
+    <div class="dateContainer">
+        <h5 class="dayNameHeading">{{this.getToday()}}</h5>
+        <p class="datePara">{{this.getDay()}} {{this.getMonthName()}}</p>
+    </div>
+    <div class="showContainer">
+        <div class="firstShowContainer" *ngFor="let showtimes of this.getRemainingShowTimes()" [ngStyle]="this.isCurrentShowScreen(showtimes)?{'background-color':'#f556c0','color':'#fff'}:{}" (click)="changeCurrentShow(showtimes)">
+            <h4 class="firstShowTimingHeading">{{showtimes}}</h4>
+            <p class="firstShowFormatPara">2D</p>
+        </div>
+        <!-- <div class="firstShowContainer">
+            <h4 class="firstShowTimingHeading">06:30 PM</h4>
+            <p class="firstShowFormatPara">2D</p>
+        </div>
+        <div class="firstShowContainer">
+            <h4 class="firstShowTimingHeading">09:30 PM</h4>
+            <p class="firstShowFormatPara">2D</p>
+        </div> -->
+    </div>
+    <div class="slotIdentifierContainer">
+        <div class="individualSlotIdentifierContainer">
+            <mat-icon class="availableSlotIconContainer">check_box_outline_blank</mat-icon>
+            <p class="individualSlotPara">AVAILABLE</p>
+        </div>
+        <div class="individualSlotIdentifierContainer">
+            <mat-icon class="bookedSlotIconContainer">check_box_outline_blank</mat-icon>
+            <p class="individualSlotPara">BOOKED</p>
+        </div>
+        <div class="individualSlotIdentifierContainer">
+            <mat-icon class="selectedSlotIconContainer">check_box_outline_blank</mat-icon>
+            <p class="individualSlotPara">SELECTED</p>
+        </div>
+    </div>
+</div>
+<div class="seatlayoutContainer">
+    <h4 class="layoutHeading">QUARTZ : <span class="amountContainer">&#x20B9;{{getTicketPrice()}}</span></h4>
+    <div class="layoutContainer">
+        <div class="firstRowContainer">
+            <div class="firstRowHeading">A</div>
+            <div class="firstColumnContainer">
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A1')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A1')&&this.seatsSelcted.includes('A1')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A1',1)">1</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A2')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A2')&&this.seatsSelcted.includes('A2')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A2',2)">2</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A3')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A3')&&this.seatsSelcted.includes('A3')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A3',3)">3</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A4')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A4')&&this.seatsSelcted.includes('A4')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A4',4)">4</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A5')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A5')&&this.seatsSelcted.includes('A5')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A5',5)">5</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A6')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A6')&&this.seatsSelcted.includes('A6')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A6',6)" >6</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A7')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A7')&&this.seatsSelcted.includes('A7')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A7',7)">7</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A8')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A8')&&this.seatsSelcted.includes('A8')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A8',8)">8</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A9')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A9')&&this.seatsSelcted.includes('A9')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A9',9)">9</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A10')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A10')&&this.seatsSelcted.includes('A10')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A10',10)">10</div>
+                
+            </div>
+            <div class="secondColumnContainer">
+                <div class="seatCard">11</div>
+                <div class="seatCard">12</div>
+                <div class="seatCard">13</div>
+                <div class="seatCard">14</div>
+                <div class="seatCard">15</div>
+                <div class="seatCard">16</div>
+                <div class="seatCard">17</div>
+                <div class="seatCard">18</div>
+                <div class="seatCard">19</div>
+                <div class="seatCard">20</div>
+            </div>
+            <div class="thirdColumnContainer">
+                <div class="seatCard">21</div>
+                <div class="seatCard">22</div>
+                <div class="seatCard">23</div>
+                <div class="seatCard">24</div>
+                <div class="seatCard">25</div>
+                <div class="seatCard">26</div>
+                <div class="seatCard">27</div>
+                <div class="seatCard">28</div>
+                <div class="seatCard">29</div>
+                <div class="seatCard">30</div>
+            </div>
+        </div>
+        <div class="secondRowContainer">
+            <div class="firstRowHeading">B</div>
+            <div class="firstColumnContainer">
+                <div class="seatCard">1</div>
+                <div class="seatCard">2</div>
+                <div class="seatCard">3</div>
+                <div class="seatCard">4</div>
+                <div class="seatCard">5</div>
+                <div class="seatCard">6</div>
+                <div class="seatCard">7</div>
+                <div class="seatCard">8</div>
+                <div class="seatCard">9</div>
+                <div class="seatCard">10</div>
+            </div>
+            <div class="secondColumnContainer">
+                <div class="seatCard">11</div>
+                <div class="seatCard">12</div>
+                <div class="seatCard">13</div>
+                <div class="seatCard">14</div>
+                <div class="seatCard">15</div>
+                <div class="seatCard">16</div>
+                <div class="seatCard">17</div>
+                <div class="seatCard">18</div>
+                <div class="seatCard">19</div>
+                <div class="seatCard">20</div>
+            </div>
+            <div class="thirdColumnContainer">
+                <div class="seatCard">21</div>
+                <div class="seatCard">22</div>
+                <div class="seatCard">23</div>
+                <div class="seatCard">24</div>
+                <div class="seatCard">25</div>
+                <div class="seatCard">26</div>
+                <div class="seatCard">27</div>
+                <div class="seatCard">28</div>
+                <div class="seatCard">29</div>
+                <div class="seatCard">30</div>
+            </div>
+        </div>
+        <div class="secondRowContainer">
+            <div class="firstRowHeading">C</div>
+            <div class="firstColumnContainer">
+                <div class="seatCard">1</div>
+                <div class="seatCard">2</div>
+                <div class="seatCard">3</div>
+                <div class="seatCard">4</div>
+                <div class="seatCard">5</div>
+                <div class="seatCard">6</div>
+                <div class="seatCard">7</div>
+                <div class="seatCard">8</div>
+                <div class="seatCard">9</div>
+                <div class="seatCard">10</div>
+            </div>
+            <div class="secondColumnContainer">
+                <div class="seatCard">11</div>
+                <div class="seatCard">12</div>
+                <div class="seatCard">13</div>
+                <div class="seatCard">14</div>
+                <div class="seatCard">15</div>
+                <div class="seatCard">16</div>
+                <div class="seatCard">17</div>
+                <div class="seatCard">18</div>
+                <div class="seatCard">19</div>
+                <div class="seatCard">20</div>
+            </div>
+            <div class="thirdColumnContainer">
+                <div class="seatCard">21</div>
+                <div class="seatCard">22</div>
+                <div class="seatCard">23</div>
+                <div class="seatCard">24</div>
+                <div class="seatCard">25</div>
+                <div class="seatCard">26</div>
+                <div class="seatCard">27</div>
+                <div class="seatCard">28</div>
+                <div class="seatCard">29</div>
+                <div class="seatCard">30</div>
+            </div>
+        </div>
+        <div class="secondRowContainer">
+            <div class="firstRowHeading">D</div>
+            <div class="firstColumnContainer">
+                <div class="seatCard">1</div>
+                <div class="seatCard">2</div>
+                <div class="seatCard">3</div>
+                <div class="seatCard">4</div>
+                <div class="seatCard">5</div>
+                <div class="seatCard">6</div>
+                <div class="seatCard">7</div>
+                <div class="seatCard">8</div>
+                <div class="seatCard">9</div>
+                <div class="seatCard">10</div>
+            </div>
+            <div class="secondColumnContainer">
+                <div class="seatCard">11</div>
+                <div class="seatCard">12</div>
+                <div class="seatCard">13</div>
+                <div class="seatCard">14</div>
+                <div class="seatCard">15</div>
+                <div class="seatCard">16</div>
+                <div class="seatCard">17</div>
+                <div class="seatCard">18</div>
+                <div class="seatCard">19</div>
+                <div class="seatCard">20</div>
+            </div>
+            <div class="thirdColumnContainer">
+                <div class="seatCard">21</div>
+                <div class="seatCard">22</div>
+                <div class="seatCard">23</div>
+                <div class="seatCard">24</div>
+                <div class="seatCard">25</div>
+                <div class="seatCard">26</div>
+                <div class="seatCard">27</div>
+                <div class="seatCard">28</div>
+                <div class="seatCard">29</div>
+                <div class="seatCard">30</div>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="https://assetscdn1.paytm.com/movies_new/_next/static/media/screen-icon.8dd7f126.svg" class="theatreScreenImg">
+<br>
+<div class="bookTicketContainer" *ngIf="this.seatsSelcted.length>0?true:false">
+    <div class="priceDetailsContainer">
+        <h5 class="priceHeading">&#x20B9; {{this.seatsSelcted.length*getTicketPrice()}}</h5>
+        <p class="pricePara">Tickets {{this.seatsSelcted.length}} X &#x20B9; {{getTicketPrice()}}</p>
+    </div>
+    <button class="bookTicketBtn" (click)="bookTickets($event)">Book Ticket</button>
+</div>
+</div>
