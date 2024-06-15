@@ -8,9 +8,11 @@
     </div>
     
     
-    <button mat-button class="accountBtn"   [matMenuTriggerFor]="logoutmenu">Hi {{this.currentCustomer?.contactno}}<mat-icon matIconSuffix>account_circle</mat-icon> </button>
+    <button mat-button class="accountBtn"   [matMenuTriggerFor]="logoutmenu" *ngIf="this.onCurrentCustomerChange()">Hi {{this.currentCustomer?.contactno}}<mat-icon matIconSuffix>account_circle</mat-icon> </button>
+    <button mat-button class="accountBtn"   [matMenuTriggerFor]="logoutmenu" *ngIf="!this.onCurrentCustomerChange()">Login/Signup<mat-icon matIconSuffix>account_circle</mat-icon> </button>
     <mat-menu #logoutmenu="matMenu">
-      <button mat-menu-item class="logoutBtn" (click)="logout()">Logout <mat-icon>logout</mat-icon></button>
+      <button mat-menu-item class="logoutBtn" (click)="logout()" *ngIf="this.onCurrentCustomerChange()">Logout <mat-icon>logout</mat-icon></button>
+      <button mat-menu-item class="logoutBtn" (click)="login()" *ngIf="!this.onCurrentCustomerChange()">Login <mat-icon>login</mat-icon></button>
     </mat-menu>
         
            <img src="../../assets/google-play.png" class="playstoreImg"> 
@@ -20,7 +22,7 @@
 <div class="overallscreenTheatreListContainer" *ngIf="this.isShowTheatreList" (mouseenter)="this.showTheatreList()" (mouseleave)="this.hideTheatreList()">
     <div class="screenTheatreHeading">Cinemas in Chennai</div>
     <ul class="screenTheatreListContainer">
-        <li class="screenTheatreListItem" *ngFor="let t of this.cityTheatreList">
+        <li class="screenTheatreListItem" *ngFor="let t of this.cityTheatreList" (click)="this.navigateToTheatreView(t.theatreID?.substring(1))">
             {{t.theatreName}}
         </li>
         <!-- <li class="screenTheatreListItem">

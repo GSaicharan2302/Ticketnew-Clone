@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
 import { LoginData } from '../model/login-data';
 import { Token } from '@angular/compiler';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,7 @@ export class LoginComponent {
   isLoginBtnVisible:boolean=false;
   loginData:LoginData={};
   isLoginSuccess:boolean=false;
-  constructor(private authService:AuthService){
+  constructor(private authService:AuthService,private router:Router){
 
   }
   getOTP(){
@@ -52,5 +53,9 @@ export class LoginComponent {
           console.log(failure);
       }
     )
+  }
+  register(event:Event){
+    event.preventDefault();
+    this.router.navigateByUrl("/registerView");
   }
 }

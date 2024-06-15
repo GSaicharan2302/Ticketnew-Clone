@@ -33,4 +33,7 @@ export class MovieService {
   getAmount(obj:any,theatreID:string,movieID:string,format:string){
     return this.httpClient.post<number>(this.moviesURL+"/getAmount/"+theatreID+"/"+movieID+"/"+format,obj);
   }
+  getMoviesByTheatreID(theatreID:string){
+    return this.httpClient.get<Movie[]>(this.moviesURL+"/getMoviesByTheatreID/"+theatreID);
+  }
 }

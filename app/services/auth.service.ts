@@ -8,8 +8,15 @@ import { Token } from '../model/token';
   providedIn: 'root'
 })
 export class AuthService {
-  url:string="http://localhost:3333/movie/auth"
-  constructor(private httpClient:HttpClient) { }
+  url:string="http://localhost:3333/movie/auth";
+  isCustomerLoggedIn?:boolean;
+  isTheatreLoggedIn?:boolean;
+  constructor(private httpClient:HttpClient) { 
+    let tempCustomerToken:string|null=localStorage.getItem("customerToken");
+    if(tempCustomerToken!==null && tempCustomerToken!==""){
+      this.isCustomerLoggedIn=true;
+    }
+  }
   getOTP(emailID:string){
       let user:User={};
       user.emailID=emailID;

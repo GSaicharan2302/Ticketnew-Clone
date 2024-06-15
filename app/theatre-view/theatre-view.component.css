@@ -1,0 +1,351 @@
+.toolBarContainer{
+    background-color: aliceblue;
+    /* box-shadow: 1px 1px 1px 1px #fff; */
+}
+.logoImg{
+    width: 5%;
+    height: 70%;
+    margin-left: 17px;
+}
+.btnContainer{
+    margin-left: 23px;
+    width: 28.8%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navBtn:hover{
+    background-color: aquamarine;
+    border-radius: 8.6px;
+}
+.accountBtn{
+    border-radius: 17.8px;
+    margin-left: 600px;
+    /* margin-left: 174%; */
+}
+.accountBtn:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+.playstoreImg{
+    width: 2.1%;
+    margin-left: 37px;
+    margin-top: -1.8px;
+}
+.applelogoImg{
+    width: 1.9%;
+    margin-left: 27px;
+    margin-top: -8px;
+}
+.theatreNameContainer{
+    /* background-color: red; */
+    display :flex;
+}
+.theatreDetailsContainer{
+    margin-top: 27px;
+}
+.favoriteIcon{
+    width: 12%;
+    height: 45px;
+    font-size: 30px;
+}
+.theatreNameHeadingSpan{
+    font-size: 26px;
+    font-family: "Geologica",sans-serif;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-right: 22px;
+    margin-top: 5px;
+}
+.favoriteIcon:hover{
+    cursor: pointer;
+}
+.theatreAddressPara{
+    font-size: 18px;
+    font-family: "Geologica",sans-serif;
+    margin-left: 10.4%;
+}
+.movieCardImg{
+    width: 40%;
+    height: 108px;
+    border-radius: 7.8px;
+}
+.movieCard{
+    min-width: 38%;
+    max-width: 38%;
+    box-shadow: none;
+    margin-left: 38px;
+}
+.movieCardContainer{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 7.8px;
+    margin-left: 68px;
+    margin-top: 60px;
+    display: flex;
+}
+.movieCardHeader{
+    padding: 12px;
+    /* background-color: rgb(76, 89, 226); */
+}
+.movieNameHeading{
+    font-size: 20px;
+    font-family: "Geologica",sans-serif;
+    font-weight: 600;
+    width: 78%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movieRatingGenrePara{
+    font-size: 15px;
+    font-family: "Geologica",sans-serif;
+    font-weight:500;
+    /* margin-left: 5px; */
+}
+.movieDetailsContainer{
+    margin-top: 27px;
+    margin-left: 21px;
+    line-height: 3.6;
+}
+.individualShowtimeCard{
+    width: 17%;
+    background-color: #dff0e6;
+    border-radius: 7.8px;
+    padding: 10px;
+    height: 96px;
+    margin-left: 44px;
+    margin-top: 20px;
+}
+.individualShowtimeCard:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    transform: scale(0.9);
+}
+.showTimeHeading{
+    text-align: center;
+    font-size: 18px;
+    font-family: "Geologica",sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.showScreenPara{
+    text-align: center;
+    font-size: 17px;
+    font-family: "Geologica",sans-serif;
+    font-weight: 500;
+}
+.showtimesContainer{
+    width: 60%;
+    display: flex;
+    /* background-color: yellow; */
+}
+.datesgroupContainer{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 45px;
+}
+.monthContainer{
+    width: 2%;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #888a8c;
+    display: flex;
+    align-items: center;
+}
+.monthNameSpan{
+    /* background-color: blue; */
+    color: #fff;
+    margin-left: 2px;
+    rotate: 270deg;
+}
+.dateContainer{
+    width: 4%;
+    border-radius: 8.9px;
+    background-color: #fff;
+    margin-left: 13px;
+}
+.dateContainer:hover{
+    background-color: #77a8f7;
+    color: #fff;
+    cursor: pointer;
+}
+.dayPara{
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.datePara{
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+.filterformatpriceContainer{
+    margin-left: 103px;
+    display: flex;
+    /* background-color: red; */
+    width: 50%;
+
+}
+.filterbyContainer{
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    /* background-color: yellow; */
+}
+.languageFilterContainer{
+    width: 16%;
+    height: 38px;
+    background-color: #c9daf5;
+    padding: 4.8px;
+    padding-left: 6.8px;
+    display: flex;
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 4.3px;
+    font-size: 18px;
+    font-family:"Catamaran", sans-serif ;
+    font-weight: 600;
+}
+.languageFilterContainer:hover{
+    cursor: pointer;
+}
+.dropdowniconContainer{
+    /* background-color: red; */
+    margin-top: -3px;
+}
+.formatFilterContainer{
+    width: 16.2%;
+    height: 38px;
+    background-color: #c9daf5;
+    padding: 4.8px;
+    padding-left: 6.8px;
+    display: flex;
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 4.3px;
+    font-size: 18px;
+    font-family:"Catamaran", sans-serif ;
+    font-weight: 600;   
+}
+.formatFilterContainer:hover{
+    cursor: pointer;
+}
+.showtimeFilterContainer{
+    width: 17.4%;
+    height: 38px;
+    background-color: #c9daf5;
+    padding: 4.8px;
+    padding-left: 6.8px;
+    display: flex;
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 4.3px;
+    font-size: 18px;
+    font-family:"Catamaran", sans-serif ;
+    font-weight: 600;   
+}
+.showtimeFilterContainer:hover{
+    cursor: pointer;
+}
+.overallscreenTheatreListContainer{
+    
+    width: 60%;
+    border-radius: 5px;
+    padding: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 76px;
+    left: 58px;
+    z-index: 156;
+}
+.screenTheatreHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5a5c5f;
+    margin-left: 54px;
+    margin-top: 20px;
+}
+.screenTheatreListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 11px;
+    padding-bottom: 14px;
+    list-style-type: none;
+    /* background-color: red; */
+}
+.screenTheatreListItem{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    width: 40%;
+    margin-left: 17px;
+    /* background-color: #77a8f7; */
+    margin-top: 23px;
+    border-radius: 4px;
+    padding: 3px;
+    line-height: 1.5;
+}
+
+.screenTheatreListItem:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.overallmovieListContainer{
+    width: 70%;
+    border-radius: 5px;
+    position: absolute;
+    top: 76px;
+    left: 38px;
+    z-index: 157;
+    background-color: #fff;
+    padding: 20px;
+}
+.movieListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.movieListItem{
+    width: 43%;
+    margin-bottom: 17px;
+}
+.movieListItem:hover{
+    cursor: pointer;
+}
+.movieListItemCard{
+    width: 100%; 
+    box-shadow: none;
+}
+.movieListHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.movieListItemCardImg{
+    width: 25%;
+    height: 56px;
+    border-radius: 5px;
+}
+.movieListItemCardHeaderMovieDetails{
+    margin-left: 25px;
+}
+.movieListCardHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18.1px;
+    font-weight: 600;
+}
+.movieListCardPara{
+    font-family: "Catamaran",sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}

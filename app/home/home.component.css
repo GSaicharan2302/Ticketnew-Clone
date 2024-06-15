@@ -225,3 +225,98 @@
     font-size: 20px;
     margin-left: 31%;
 }
+.overallscreenTheatreListContainer{
+    
+    width: 60%;
+    border-radius: 5px;
+    padding: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: 76px;
+    left: 58px;
+    z-index: 156;
+}
+.screenTheatreHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5a5c5f;
+    margin-left: 54px;
+    margin-top: 20px;
+}
+.screenTheatreListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 11px;
+    padding-bottom: 14px;
+    list-style-type: none;
+    /* background-color: red; */
+}
+.screenTheatreListItem{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    width: 40%;
+    margin-left: 17px;
+    /* background-color: #77a8f7; */
+    margin-top: 23px;
+    border-radius: 4px;
+    padding: 3px;
+    line-height: 1.5;
+}
+
+.screenTheatreListItem:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.overallmovieListContainer{
+    width: 70%;
+    border-radius: 5px;
+    position: absolute;
+    top: 76px;
+    left: 38px;
+    z-index: 157;
+    background-color: #fff;
+    padding: 20px;
+}
+.movieListPartContainer{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.movieListItem{
+    width: 43%;
+    margin-bottom: 17px;
+}
+.movieListItem:hover{
+    cursor: pointer;
+}
+.movieListItemCard{
+    width: 100%; 
+    box-shadow: none;
+}
+.movieListHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.movieListItemCardImg{
+    width: 25%;
+    height: 56px;
+    border-radius: 5px;
+}
+.movieListItemCardHeaderMovieDetails{
+    margin-left: 25px;
+}
+.movieListCardHeading{
+    font-family: "Catamaran",sans-serif;
+    font-size: 18.1px;
+    font-weight: 600;
+}
+.movieListCardPara{
+    font-family: "Catamaran",sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}

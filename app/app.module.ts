@@ -24,6 +24,9 @@ import { SeatviewComponent } from './seatview/seatview.component';
 import { OrdercustomerviewComponent } from './ordercustomerview/ordercustomerview.component';
 import { RegisterComponent } from './register/register.component';
 import {MatInputModule} from '@angular/material/input';
+import { TheatreViewComponent } from './theatre-view/theatre-view.component';
+import { TheatreOwnerHomeComponent } from './theatre-owner-home/theatre-owner-home.component';
+import { TheatreLoginComponent } from './theatre-login/theatre-login.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import {MatInputModule} from '@angular/material/input';
     LoginComponent,
     SeatviewComponent,
     OrdercustomerviewComponent,
-    RegisterComponent
+    RegisterComponent,
+    TheatreViewComponent,
+    TheatreOwnerHomeComponent,
+    TheatreLoginComponent
   ],
   imports: [
     BrowserModule,

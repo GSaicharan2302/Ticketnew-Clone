@@ -40,6 +40,7 @@ export class SeatviewComponent {
             let show:string|null=localStorage.getItem("showTime");
             let screen:string|null=localStorage.getItem("screen");
             let movieID:string|null=localStorage.getItem("movieID");
+            console.log("Movie ID in constructor is : "+movieID);
             this.getMonthName();
             if(customerToken!==null){
                 this.customerService.getCustomer(customerToken).subscribe(

@@ -9,6 +9,8 @@ import { ShowScreen } from '../model/show-screen';
 import { Customer } from '../model/customer';
 import { CustomerService } from '../services/customer.service';
 import { TheatreService } from '../services/theatre.service';
+import { LoginComponent } from '../login/login.component';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-movieview',
   templateUrl: './movieview.component.html',
@@ -45,7 +47,7 @@ goToOrders(event: Event) {
   is3DformatSelected:boolean=false;
   isIMAX3DformatSelected:boolean=false;
   movies:Movie[]=[];
-  constructor(private router:Router,private activatedRoute:ActivatedRoute,private movieService:MovieService,private datePipe:DatePipe,private customerService:CustomerService,private theatreService:TheatreService){
+  constructor(private router:Router,private activatedRoute:ActivatedRoute,private movieService:MovieService,private datePipe:DatePipe,private customerService:CustomerService,private theatreService:TheatreService,private dialog:MatDialog){
       this.activatedRoute.paramMap.subscribe(
         data=>{
           let str:string=data.get('movieID')??"";
@@ -406,6 +408,34 @@ logout(){
       )
     }
   }
-
+  navigateToTheatreView(theatreID:string|undefined){
+      if(theatreID){
+        this.router.navigateByUrl("/theatreview/"+theatreID);
+      }
+  }
+  login(){
+    let dialogRef=this.dialog.open(LoginComponent,{
+      width:'1040px',
+      height:'270px'
+    });
+    dialogRef.afterClosed().subscribe(
+      result=>{
+        console.log(result);
+        let token:string|null=localStorage.getItem("customerToken");
+        console.log("Token is : "+token);
+        if(token!==null){
+              this.customerService.getCustomer(token).subscribe(
+                success=>{
+                  this.currentCustomer=success;
+                  console.log(this.currentCustomer);
+                },
+                failure=>{
+                  console.log(failure);
+                }
+              )     
+        }
+      }
+    )
+  }
 
 }

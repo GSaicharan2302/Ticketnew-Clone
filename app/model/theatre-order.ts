@@ -5,4 +5,6 @@ export class TheatreOrder {
     screen?:string;
     date?:Date;
     showTime?:string;
+    emailID?:string;
+    customerName?:string;
 }

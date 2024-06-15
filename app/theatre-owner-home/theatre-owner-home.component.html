@@ -1,0 +1,30 @@
+<div class="navBarContainer">
+    <img src="https://assetscdn1.paytm.com/movies_new/_next/static/media/tn-paytm-logo-seat-layout.b4b6edde.png" class="paytmTicketnewLogo">
+    <h4 class="theatreNameHeading">{{this.currentTheatre.theatreName}} . {{this.currentTheatre.theatreAddress?.area}}</h4>
+    <div class="iconContainer">
+        <button mat-icon-button class="iconBtn">
+            <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button class="iconBtn">
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button class="iconBtn" (click)="logout($event)">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </div>
+</div>
+<h4 class="orderSummaryHeading">Order Summary : </h4>
+<div class="orderContainer">
+    <mat-card class="orderCard" *ngFor="let o of orders">
+        <mat-card-content class="orderCardContent">
+            <h4 class="orderIDHeading">Order ID : {{o.orderID}}</h4>
+            <h4 class="orderIDHeading">Customer Name : {{o.customerName}}</h4>
+            <h4 class="orderIDHeading">Email ID : {{o.emailID}}</h4>
+            <h4 class="orderIDHeading">No.of Seats : {{o.seats?.length}}</h4>
+            <h4 class="orderIDHeading">Screen : {{o.screen}}</h4>
+            <h4 class="orderIDHeading">Date : {{getProperFormattedDate(o.date)}}</h4>
+            <h4 class="orderIDHeading">Show : {{o.showTime}}</h4>
+        </mat-card-content>
+    </mat-card>
+</div>
+<app-footer></app-footer>

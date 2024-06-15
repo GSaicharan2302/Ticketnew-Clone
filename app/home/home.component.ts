@@ -7,6 +7,8 @@ import { Movie } from '../model/movie';
 import { LoginComponent } from '../login/login.component';
 import { Customer } from '../model/customer';
 import { CustomerService } from '../services/customer.service';
+import { Theatre } from '../model/theatre';
+import { TheatreService } from '../services/theatre.service';
 
 @Component({
   selector: 'app-home',
@@ -24,8 +26,11 @@ export class HomeComponent {
   mySet: Set<string> = new Set<string>();
   currentCustomer?:Customer={};
   isLoginBtnView:boolean=false;
-  
-  constructor(private router:Router,private dialog:MatDialog,private movieService:MovieService,private customerService:CustomerService){
+  isShowTheatreList:boolean=false;
+  isShowMovieList:boolean=false;
+  cityTheatreList:Theatre[]=[];
+  movies:Movie[]=[];
+  constructor(private router:Router,private dialog:MatDialog,private movieService:MovieService,private customerService:CustomerService,private theatreService:TheatreService){
         let dialogRef=this.dialog.open(CityComponent,{
           width:'1040px',
           height:'270px'
@@ -57,6 +62,7 @@ export class HomeComponent {
             }
           )
         }
+        this.getTheatresByCity();
   }
   onCurrentCustomerChange(){
     console.log(localStorage.getItem("customerToken"));
@@ -73,7 +79,7 @@ export class HomeComponent {
   onLogin(){
     let dialogRef=this.dialog.open(LoginComponent,{
       width:'1040px',
-      height:'270px'
+      height:'330px'
     });
     dialogRef.afterClosed().subscribe(
       result=>{
@@ -270,5 +276,76 @@ export class HomeComponent {
     this.router.navigateByUrl("/movieView/"+id);
     }
   }
+  showTheatreList(){
+    this.isShowTheatreList=true;
+    this.isShowMovieList=false;
+  }
+  hideTheatreList(){
+    this.isShowTheatreList=false;
+  }
+  getTheatresByCity(){
+    let city:string|null=localStorage.getItem("city");
+    if(city!=null){
+      this.theatreService.getTheatresByCity(city).subscribe(
+        success=>{
+            this.cityTheatreList=success;
+        },
+        failure=>{
+            console.log(failure);
+        }
+      )
 
+    }
+  }
+  navigateToTheatreView(theatreID:string|undefined){
+    if(theatreID){
+      this.router.navigateByUrl("/theatreview/"+theatreID);
+    }
+}
+showMovieList(){
+  this.isShowMovieList=true;
+  this.isShowTheatreList=false;
+}
+hideMovieList(){
+  this.isShowMovieList=false;
+}
+getNewMovie(movieID:string|undefined){
+  if(movieID){
+    movieID=movieID.substring(1);
+    localStorage.setItem("movieID",movieID);
+    this.router.navigateByUrl("/movieView/"+movieID);
+  }
+}
+getLanguagesByTheatreList(m:Movie){
+  let langArray:string[]=[];
+  console.log(m.movieName);
+  m.theatres?.forEach(e=>{
+    if(e.city===this.currentCity && e.languages){
+        e.languages.forEach(item=>{
+          if(!langArray.includes(item)){
+            langArray.push(item);
+          }
+        })
+    }
+  });
+  console.log(langArray);
+  return langArray.toString();
+}
+getMoviesByCity(){
+  let city:string|null=localStorage.getItem("city");
+  if(city!=null){
+    this.movieService.getMoviesByCity(city).subscribe(
+      success=>{
+        this.movies=success;
+      },
+      failure=>{
+        console.log(failure);
+      }
+    )
+  }
+}
+goToOrders(event:Event){
+  event.preventDefault();
+  this.router.navigateByUrl("/orderview");
+}
 }

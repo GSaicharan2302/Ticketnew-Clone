@@ -3,9 +3,17 @@
     <label for="exampleFormControlInput1" class="form-label loginHeading">Login with Email ID:</label>
     <input type="email" class="form-control mobileNumberContainer" id="exampleFormControlInput1" placeholder="Enter Email ID:" [(ngModel)]="this.emailID">
 </div>
-<button type="button" class="btn btn-outline-info otpBtn" (click)="this.getOTP()" *ngIf="this.isSendOTPBtnVisible">Get OTP</button>
+<div class="btnContainer">
+  <button type="button" class="btn btn-outline-info otpBtn" (click)="this.getOTP()" *ngIf="this.isSendOTPBtnVisible">Get OTP</button>
+  <button type="button" class="btn btn-outline-warning registerBtn" (click)="this.register($event)" [mat-dialog-close]="false" *ngIf="this.isSendOTPBtnVisible">Register</button>
+</div>
+<div class="OwnerLinkContainer" *ngIf="this.isSendOTPBtnVisible">
+  <a href="/theatrelogin" class="theatreOwnerLinkContainer">Are you a theatre Owner ? Login</a>
+</div>
 <div class="mb-3 overallEmailContainer" *ngIf="this.isOTPContainerVisible">
   <label for="exampleFormControlInput1" class="form-label loginHeading">Enter OTP</label>
   <input type="text" class="form-control mobileNumberContainer" id="exampleFormControlInput1" placeholder="Enter OTP" [(ngModel)]="this.otp">
 </div>
-<button type="button" class="btn btn-outline-info otpBtn" (click)="this.login()" *ngIf="this.isLoginBtnVisible" [mat-dialog-close]="isLoginSuccess">Login</button>
+  <button type="button" class="btn btn-outline-info loginBtn" (click)="this.login()" *ngIf="this.isLoginBtnVisible" [mat-dialog-close]="isLoginSuccess">Login</button>
+
+

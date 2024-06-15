@@ -1,6 +1,10 @@
 .toolBarContainer{
     background-color: aliceblue;
     /* box-shadow: 1px 1px 1px 1px #fff; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 .logoImg{
     width: 5%;
@@ -203,5 +207,5 @@
     font-family: "Geologica",sans-serif;
     font-weight: 600;
     margin-left: 24%;
-    margin-top: 48px;
+    margin-top: 98px;
 }

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Theatre } from '../model/theatre';
 import { TheatreOrder } from '../model/theatre-order';
@@ -17,5 +17,11 @@ export class TheatreService {
   }
   getTheatreByID(id:string){
     return this.httpClient.get<Theatre>(this.url+"/getTheatreByID/"+id);
+  }
+  getTheatreByEmailID(token:string){
+    return this.httpClient.get<Theatre>(this.url+"/getTheatreByEmailID",{headers:new HttpHeaders({
+      'Content-Type':'application/json',
+      'Authorization':'Bearer '+token
+    })});
   }
 }

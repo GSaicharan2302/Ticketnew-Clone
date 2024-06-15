@@ -1,0 +1,5 @@
+<img src="https://assetscdn1.paytm.com/movies_new/_next/static/media/tn-paytm-logo-seat-layout.b4b6edde.png" class="paytmTicketnewLogo">
+<input type="email" class="form-control emailContainer" id="exampleFormControlInput1" placeholder="Enter Email ID : " *ngIf="isEmailIDVisible" [(ngModel)]="this.emailID">
+<input class="form-control emailContainer" type="text" placeholder="Enter OTP : " aria-label="default input example" *ngIf="isOTPVisible" [(ngModel)]="this.otp">
+<button type="button" class="btn btn-warning submitBtn" *ngIf="isEmailIDVisible" (click)="this.getOTP()">Get OTP</button>
+<button type="button" class="btn btn-warning submitBtn" *ngIf="isOTPVisible" (click)="this.login()">Submit</button>

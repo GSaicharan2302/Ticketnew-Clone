@@ -60,145 +60,145 @@
                 
             </div>
             <div class="secondColumnContainer">
-                <div class="seatCard">11</div>
-                <div class="seatCard">12</div>
-                <div class="seatCard">13</div>
-                <div class="seatCard">14</div>
-                <div class="seatCard">15</div>
-                <div class="seatCard">16</div>
-                <div class="seatCard">17</div>
-                <div class="seatCard">18</div>
-                <div class="seatCard">19</div>
-                <div class="seatCard">20</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A11')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A11')&&this.seatsSelcted.includes('A11')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A11',11)">11</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A12')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A12')&&this.seatsSelcted.includes('A12')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A12',12)">12</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A13')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A13')&&this.seatsSelcted.includes('A13')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A13',13)">13</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A14')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A14')&&this.seatsSelcted.includes('A14')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A14',14)">14</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A15')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A15')&&this.seatsSelcted.includes('A15')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A15',15)">15</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A16')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A16')&&this.seatsSelcted.includes('A16')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A16',16)">16</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A17')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A17')&&this.seatsSelcted.includes('A17')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A17',17)">17</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A18')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A18')&&this.seatsSelcted.includes('A18')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A18',18)">18</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A19')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A19')&&this.seatsSelcted.includes('A19')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A19',19)">19</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A20')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A20')&&this.seatsSelcted.includes('A20')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A20',20)">20</div>
             </div>
             <div class="thirdColumnContainer">
-                <div class="seatCard">21</div>
-                <div class="seatCard">22</div>
-                <div class="seatCard">23</div>
-                <div class="seatCard">24</div>
-                <div class="seatCard">25</div>
-                <div class="seatCard">26</div>
-                <div class="seatCard">27</div>
-                <div class="seatCard">28</div>
-                <div class="seatCard">29</div>
-                <div class="seatCard">30</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A21')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A21')&&this.seatsSelcted.includes('A21')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A21',21)">21</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A22')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A22')&&this.seatsSelcted.includes('A22')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A22',22)">22</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A23')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A23')&&this.seatsSelcted.includes('A23')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A23',23)">23</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A24')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A24')&&this.seatsSelcted.includes('A24')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A24',24)">24</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A25')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A25')&&this.seatsSelcted.includes('A25')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A25',25)">25</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A26')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A26')&&this.seatsSelcted.includes('A26')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A26',26)">26</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A27')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A27')&&this.seatsSelcted.includes('A27')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A27',27)">27</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A28')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A28')&&this.seatsSelcted.includes('A28')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A28',28)">28</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A29')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A29')&&this.seatsSelcted.includes('A29')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A29',29)">29</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('A30')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('A30')&&this.seatsSelcted.includes('A30')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('A30',30)">30</div>
             </div>
         </div>
         <div class="secondRowContainer">
             <div class="firstRowHeading">B</div>
             <div class="firstColumnContainer">
-                <div class="seatCard">1</div>
-                <div class="seatCard">2</div>
-                <div class="seatCard">3</div>
-                <div class="seatCard">4</div>
-                <div class="seatCard">5</div>
-                <div class="seatCard">6</div>
-                <div class="seatCard">7</div>
-                <div class="seatCard">8</div>
-                <div class="seatCard">9</div>
-                <div class="seatCard">10</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B1')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B1')&&this.seatsSelcted.includes('B1')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B1',1)">1</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B2')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B2')&&this.seatsSelcted.includes('B2')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B2',2)">2</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B3')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B3')&&this.seatsSelcted.includes('B3')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B3',3)">3</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B4')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B4')&&this.seatsSelcted.includes('B4')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B4',4)">4</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B5')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B5')&&this.seatsSelcted.includes('B5')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B5',5)">5</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B6')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B6')&&this.seatsSelcted.includes('B6')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B6',6)">6</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B7')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B7')&&this.seatsSelcted.includes('B7')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B7',7)">7</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B8')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B8')&&this.seatsSelcted.includes('B8')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B8',8)">8</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B9')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B9')&&this.seatsSelcted.includes('B9')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B9',9)">9</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B10')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B10')&&this.seatsSelcted.includes('B10')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B10',10)">10</div>
             </div>
             <div class="secondColumnContainer">
-                <div class="seatCard">11</div>
-                <div class="seatCard">12</div>
-                <div class="seatCard">13</div>
-                <div class="seatCard">14</div>
-                <div class="seatCard">15</div>
-                <div class="seatCard">16</div>
-                <div class="seatCard">17</div>
-                <div class="seatCard">18</div>
-                <div class="seatCard">19</div>
-                <div class="seatCard">20</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B11')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B11')&&this.seatsSelcted.includes('B11')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B11',11)">11</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B12')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B12')&&this.seatsSelcted.includes('B12')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B12',12)">12</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B13')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B13')&&this.seatsSelcted.includes('B13')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B13',13)">13</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B14')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B14')&&this.seatsSelcted.includes('B14')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B14',14)">14</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B15')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B15')&&this.seatsSelcted.includes('B15')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B15',15)">15</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B16')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B16')&&this.seatsSelcted.includes('B16')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B16',16)">16</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B17')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B17')&&this.seatsSelcted.includes('B17')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B17',17)">17</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B18')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B18')&&this.seatsSelcted.includes('B18')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B18',18)">18</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B19')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B19')&&this.seatsSelcted.includes('B19')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B19',19)">19</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B20')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B20')&&this.seatsSelcted.includes('B20')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B20',20)">20</div>
             </div>
             <div class="thirdColumnContainer">
-                <div class="seatCard">21</div>
-                <div class="seatCard">22</div>
-                <div class="seatCard">23</div>
-                <div class="seatCard">24</div>
-                <div class="seatCard">25</div>
-                <div class="seatCard">26</div>
-                <div class="seatCard">27</div>
-                <div class="seatCard">28</div>
-                <div class="seatCard">29</div>
-                <div class="seatCard">30</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B21')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B21')&&this.seatsSelcted.includes('B21')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B21',21)">21</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B22')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B22')&&this.seatsSelcted.includes('B22')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B22',22)">22</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B23')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B23')&&this.seatsSelcted.includes('B23')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B23',23)">23</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B24')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B24')&&this.seatsSelcted.includes('B24')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B24',24)">24</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B25')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B25')&&this.seatsSelcted.includes('B25')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B25',25)">25</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B26')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B26')&&this.seatsSelcted.includes('B26')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B26',26)">26</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B27')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B27')&&this.seatsSelcted.includes('B27')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B27',27)">27</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B28')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B28')&&this.seatsSelcted.includes('B28')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B28',28)">28</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B29')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B29')&&this.seatsSelcted.includes('B29')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B29',29)">29</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('B30')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('B30')&&this.seatsSelcted.includes('B30')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('B30',30)">30</div>
             </div>
         </div>
         <div class="secondRowContainer">
             <div class="firstRowHeading">C</div>
             <div class="firstColumnContainer">
-                <div class="seatCard">1</div>
-                <div class="seatCard">2</div>
-                <div class="seatCard">3</div>
-                <div class="seatCard">4</div>
-                <div class="seatCard">5</div>
-                <div class="seatCard">6</div>
-                <div class="seatCard">7</div>
-                <div class="seatCard">8</div>
-                <div class="seatCard">9</div>
-                <div class="seatCard">10</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C1')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C1')&&this.seatsSelcted.includes('C1')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C1',1)">1</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C2')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C2')&&this.seatsSelcted.includes('C2')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C2',2)">2</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C3')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C3')&&this.seatsSelcted.includes('C3')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C3',3)">3</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C4')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C4')&&this.seatsSelcted.includes('C4')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C4',4)">4</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C5')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C5')&&this.seatsSelcted.includes('C5')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C5',5)">5</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C6')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C6')&&this.seatsSelcted.includes('C6')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C6',6)">6</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C7')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C7')&&this.seatsSelcted.includes('C7')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C7',7)">7</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C8')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C8')&&this.seatsSelcted.includes('C8')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C8',8)">8</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C9')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C9')&&this.seatsSelcted.includes('C9')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C9',9)">9</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C10')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C10')&&this.seatsSelcted.includes('C10')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C10',10)">10</div>
             </div>
             <div class="secondColumnContainer">
-                <div class="seatCard">11</div>
-                <div class="seatCard">12</div>
-                <div class="seatCard">13</div>
-                <div class="seatCard">14</div>
-                <div class="seatCard">15</div>
-                <div class="seatCard">16</div>
-                <div class="seatCard">17</div>
-                <div class="seatCard">18</div>
-                <div class="seatCard">19</div>
-                <div class="seatCard">20</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C11')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C11')&&this.seatsSelcted.includes('C11')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C11',11)">11</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C12')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C12')&&this.seatsSelcted.includes('C12')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C12',12)">12</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C13')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C13')&&this.seatsSelcted.includes('C13')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C13',13)">13</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C14')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C14')&&this.seatsSelcted.includes('C14')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C14',14)">14</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C15')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C15')&&this.seatsSelcted.includes('C15')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C15',15)">15</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C16')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C16')&&this.seatsSelcted.includes('C16')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C16',16)">16</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C17')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C17')&&this.seatsSelcted.includes('C17')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C17',17)">17</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C18')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C18')&&this.seatsSelcted.includes('C18')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C18',18)">18</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C19')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C19')&&this.seatsSelcted.includes('C19')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C19',19)">19</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C20')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C20')&&this.seatsSelcted.includes('C20')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C20',20)">20</div>
             </div>
             <div class="thirdColumnContainer">
-                <div class="seatCard">21</div>
-                <div class="seatCard">22</div>
-                <div class="seatCard">23</div>
-                <div class="seatCard">24</div>
-                <div class="seatCard">25</div>
-                <div class="seatCard">26</div>
-                <div class="seatCard">27</div>
-                <div class="seatCard">28</div>
-                <div class="seatCard">29</div>
-                <div class="seatCard">30</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C21')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C21')&&this.seatsSelcted.includes('C21')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C21',21)">21</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C22')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C22')&&this.seatsSelcted.includes('C22')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C22',22)">22</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C23')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C23')&&this.seatsSelcted.includes('C23')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C23',23)">23</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C24')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C24')&&this.seatsSelcted.includes('C24')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C24',24)">24</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C25')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C25')&&this.seatsSelcted.includes('C25')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C25',25)">25</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C26')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C26')&&this.seatsSelcted.includes('C26')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C26',26)">26</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C27')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C27')&&this.seatsSelcted.includes('C27')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C27',27)">27</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C28')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C28')&&this.seatsSelcted.includes('C28')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C28',28)">28</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C29')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C29')&&this.seatsSelcted.includes('C29')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C29',29)">29</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('C30')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('C30')&&this.seatsSelcted.includes('C30')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('C30',30)">30</div>
             </div>
         </div>
         <div class="secondRowContainer">
             <div class="firstRowHeading">D</div>
             <div class="firstColumnContainer">
-                <div class="seatCard">1</div>
-                <div class="seatCard">2</div>
-                <div class="seatCard">3</div>
-                <div class="seatCard">4</div>
-                <div class="seatCard">5</div>
-                <div class="seatCard">6</div>
-                <div class="seatCard">7</div>
-                <div class="seatCard">8</div>
-                <div class="seatCard">9</div>
-                <div class="seatCard">10</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D1')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D1')&&this.seatsSelcted.includes('D1')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D1',1)">1</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D2')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D2')&&this.seatsSelcted.includes('D2')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D2',2)">2</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D3')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D3')&&this.seatsSelcted.includes('D3')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D3',3)">3</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D4')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D4')&&this.seatsSelcted.includes('D4')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D4',4)">4</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D5')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D5')&&this.seatsSelcted.includes('D5')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D5',5)">5</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D6')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D6')&&this.seatsSelcted.includes('D6')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D6',6)">6</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D7')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D7')&&this.seatsSelcted.includes('D7')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D7',7)">7</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D8')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D8')&&this.seatsSelcted.includes('D8')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D8',8)">8</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D9')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D9')&&this.seatsSelcted.includes('D9')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D9',9)">9</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D10')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D10')&&this.seatsSelcted.includes('D10')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D10',10)">10</div>
             </div>
             <div class="secondColumnContainer">
-                <div class="seatCard">11</div>
-                <div class="seatCard">12</div>
-                <div class="seatCard">13</div>
-                <div class="seatCard">14</div>
-                <div class="seatCard">15</div>
-                <div class="seatCard">16</div>
-                <div class="seatCard">17</div>
-                <div class="seatCard">18</div>
-                <div class="seatCard">19</div>
-                <div class="seatCard">20</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D11')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D11')&&this.seatsSelcted.includes('D11')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D11',11)">11</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D12')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D12')&&this.seatsSelcted.includes('D12')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D12',12)">12</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D13')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D13')&&this.seatsSelcted.includes('D13')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D13',13)">13</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D14')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D14')&&this.seatsSelcted.includes('D14')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D14',14)">14</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D15')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D15')&&this.seatsSelcted.includes('D15')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D15',15)">15</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D16')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D16')&&this.seatsSelcted.includes('D16')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D16',16)">16</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D17')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D17')&&this.seatsSelcted.includes('D17')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D17',17)">17</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D18')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D18')&&this.seatsSelcted.includes('D18')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D18',18)">18</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D19')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D19')&&this.seatsSelcted.includes('D19')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D19',19)">19</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D20')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D20')&&this.seatsSelcted.includes('D20')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D20',20)">20</div>
             </div>
             <div class="thirdColumnContainer">
-                <div class="seatCard">21</div>
-                <div class="seatCard">22</div>
-                <div class="seatCard">23</div>
-                <div class="seatCard">24</div>
-                <div class="seatCard">25</div>
-                <div class="seatCard">26</div>
-                <div class="seatCard">27</div>
-                <div class="seatCard">28</div>
-                <div class="seatCard">29</div>
-                <div class="seatCard">30</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D21')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D21')&&this.seatsSelcted.includes('D21')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D21',21)">21</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D22')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D22')&&this.seatsSelcted.includes('D22')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D22',22)">22</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D23')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D23')&&this.seatsSelcted.includes('D23')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D23',23)">23</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D24')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D24')&&this.seatsSelcted.includes('D24')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D24',24)">24</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D25')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D25')&&this.seatsSelcted.includes('D25')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D25',25)">25</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D26')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D26')&&this.seatsSelcted.includes('D26')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D26',26)">26</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D27')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D27')&&this.seatsSelcted.includes('D27')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D27',27)">27</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D28')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D28')&&this.seatsSelcted.includes('D28')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D28',28)">28</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D29')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D29')&&this.seatsSelcted.includes('D29')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D29',29)">29</div>
+                <div class="seatCard" [ngStyle]="getSeatBookedStatus('D30')?{'background-color':'#4c4f4f','color':'#d1e3e2','pointer-events':'none'}:{}" [ngStyle]="!getSeatBookedStatus('D30')&&this.seatsSelcted.includes('D30')?{'background-color':'#09d3ed'}:{}" (click)="this.selectSeats('D30',30)">30</div>
             </div>
         </div>
     </div>
